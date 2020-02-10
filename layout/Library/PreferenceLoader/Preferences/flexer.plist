@@ -1,0 +1,30 @@
+entry = {
+  bundle = AppList;
+  cell = PSLinkCell;
+  icon = "/Library/PreferenceLoader/Preferences/flexer.png";
+  isController = 1;
+  label = FLEXER;
+  ALSettingsPath = "/var/mobile/Library/Preferences/com.forkliu.flexer.plist";
+  ALSettingsKeyPrefix = "FLEXEREnabled-";
+  ALChangeNotification = "com.forkliu.flexer.settingschanged";
+  ALSettingsDefaultValue = 0;
+  ALSectionDescriptors = (
+  	
+  	{
+  	  title = "User Applications";
+  	  predicate = "(isSystemApplication = FALSE)";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	  
+  	},
+  	{
+  	  title = "System Applications";
+  	  predicate = "(isSystemApplication = TRUE)";
+  	  "cell-class-name" = "ALSwitchCell";
+  	  "icon-size" = 29;
+  	  "suppress-hidden-apps" = 1;
+  	  "footer-title" = "© yohunl create for demo";
+  	}
+  );
+};

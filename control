@@ -1,9 +1,9 @@
 Package: com.forkliu.flexer
 Name: flexer
-Depends: mobilesubstrate
+Depends: mobilesubstrate,preferenceloader,applist
 Version: 0.0.1
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
+Description: a set of in-app debugging and exploration tools.
 Maintainer: liujun
 Author: liujun
 Section: Tweaks
